@@ -1,0 +1,23 @@
+name: publish-docker
+
+on: [push]
+
+permissions:
+  packages: write
+  contents: read
+
+jobs:
+  publish-image:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Login to GitHub Container Registry
+      run: |
+        echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+    - name: Build the ai-actividad1 Docker image
+      run: |
+        docker build . --tag ghcr.io/${{ github.actor }}/ai-actividad1:latest
+        docker push ghcr.io/${{ github.actor }}/ai-actividad1:latest
