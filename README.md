@@ -15,11 +15,11 @@ Se puede obtener la imagen del contenedor alojada en este repositorio de GitHub 
 
 2. Ejecutar el contenedor con las empresas por defecto del fichero `EMPRESAS.txt`:
    ```console
-   $ docker run -e CHAT_ID=XXX -e BOT_TOKEN=XXX ai-actividad1
+   $ docker run -e CHAT_ID=XXX -e BOT_TOKEN=XXX ghcr.io/adrianja5/ai-actividad1:latest
    ```
    O con las empresas indicadas en un fichero externo:
    ```console
-   $ docker run -e CHAT_ID=XXX -e BOT_TOKEN=XXX -v ruta-local-fichero-empresas:/app/EMPRESAS.txt ai-actividad1
+   $ docker run -e CHAT_ID=XXX -e BOT_TOKEN=XXX -v ruta-local-fichero-empresas:/app/EMPRESAS.txt ghcr.io/adrianja5/ai-actividad1:latest
    ```
    Esta última opción permite modificar fácilmente las empresas a las que vigilar por el bot, sin la necesidad de parar el contenedor.
 
