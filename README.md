@@ -21,7 +21,7 @@ Se puede obtener la imagen del contenedor alojada en este repositorio de GitHub 
    ```console
    $ docker run -e CHAT_ID=XXX -e BOT_TOKEN=XXX -v ruta-local-fichero-empresas:/app/EMPRESAS.txt ai-actividad1
    ```
-   Ésta última opción permite modificar fácilmente las empresas a las que vigilar por el bot sin la necesidad de parar el contenedor.
+   Esta última opción permite modificar fácilmente las empresas a las que vigilar por el bot, sin la necesidad de parar el contenedor.
 
 ---
 
@@ -57,4 +57,4 @@ Se puede obtener la imagen del contenedor contruyéndola manualmente siguiendo l
    ```console
    $ docker run -e CHAT_ID=XXX -e BOT_TOKEN=XXX -v ruta-local-fichero-empresas:/app/EMPRESAS.txt ai-actividad1
    ```
-   Ésta última opción permite modificar fácilmente las empresas a las que vigilar por el bot sin la necesidad de parar el contenedor.
+   Esta última opción permite modificar fácilmente las empresas a las que vigilar por el bot, sin la necesidad de parar el contenedor.
