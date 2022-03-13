@@ -1,6 +1,6 @@
 # Actividad 1 - Agentes de recolección
 
-Saca la cotización de las empresas que se indiquen o las de por defecto en el fichero `EMPRESAS.txt`.
+Saca la cotización de las empresas que se indiquen en el fichero `EMPRESAS.txt`.
 
 ## Pasos
 
