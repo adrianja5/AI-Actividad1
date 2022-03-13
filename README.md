@@ -41,15 +41,10 @@ Se puede obtener la imagen del contenedor contruyéndola manualmente siguiendo l
 
 3.
    ```console
-   $ docker build --tag ai-actividad1
+   $ docker build --tag ai-actividad1 .
    ```
 
-4.
-   ```console
-   $ docker pull ghcr.io/adrianja5/ai-actividad1:latest
-   ```
-
-5. Ejecutar el contenedor con las empresas por defecto del fichero `EMPRESAS.txt`:
+4. Ejecutar el contenedor con las empresas por defecto del fichero `EMPRESAS.txt`:
    ```console
    $ docker run -e CHAT_ID=XXX -e BOT_TOKEN=XXX ai-actividad1
    ```
